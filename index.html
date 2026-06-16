@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kwiaciarnia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/684c9ec5ef.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/dist/css/main.min.css">
+</head>
+
+<body>
+    <a class="cart-mobile" href="#cart" aria-label="Koszyk">
+    <i class="fa-solid fa-cart-shopping"></i>
+    <span class="cart-mobile__count">0</span>
+</a>
+<button class="burger-btn">
+    <div class="burger-btn__box">
+        <div class="burger-btn__bars"></div>
+    </div>
+</button>
+<nav class="nav">
+    <div class="nav-mobile">
+        <a class="nav-mobile__items" href="index.html">Strona główna</a>
+        <!-- <a class="nav-mobile__items" href="#bouquets">Bukiety</a> -->
+        <a class="nav-mobile__items" href="okazje.html">Okazje</a>
+        <a class="nav-mobile__items" href="flowerboxy.html">Flower Boxy</a>
+        <a class="nav-mobile__items" href="#Weddings">Śluby</a>
+        <a class="nav-mobile__items" href="#aboutUs">O nas</a>
+        <a class="nav-mobile__items" href="#contact">Kontakt</a>
+    </div>
+    <div class="nav-desktop">
+        <a class="nav-desktop__items" href="index.html">Strona główna</a>
+        <!-- <a class="nav-desktop__items" href="#bouquets">Bukiety</a> -->
+        <a class="nav-desktop__items" href="okazje.html">Okazje</a>
+        <a class="nav-desktop__items" href="flowerboxy.html">Flower Boxy</a>
+        <a class="nav-desktop__items" href="#Weddings">Śluby</a>
+        <a class="nav-desktop__items" href="#aboutUs">O nas</a>
+        <a class="nav-desktop__items" href="#contact">Kontakt</a>
+        <a class="nav-desktop__cart" href="#cart" aria-label="Koszyk">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="nav-desktop__cart-count">0</span>
+        </a>
+    </div>
+
+</nav>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header__content">
+                <h1 class="header__heading">Kwiaty, które <br><span class="header__heading--colour">mówią więcej </span>
+                    <br>niż słowa
+                </h1>
+                <div class="header-box">
+                    <p class="header-box__text">Świeże kompozycje na każdą okazję</p>
+                    <p class="header-box__text">Dostawa nawet w 2 godziny</p>
+                </div>
+                <a href="#bouquets" class="header__btn btn-special-animation">Zamów bukiet</a>
+                <a href="#delivery" class="header__btn--two">Dostawa dziś</a>
+            </div>
+            <div class="header-features">
+                <div class="header-features__item">
+                    <img class="header-features__item-img" src="/dist/img/icon/truck.svg" alt="" />
+                    <span class="header-features__item-span">Dostawa nawet w 2h</span>
+                </div>
+
+                <div class="header-features__item">
+                    <img class="header-features__item-img" src="/dist/img/icon/flower.svg" alt="" />
+                    <span class="header-features__item-span">Świeże kwiaty codziennie</span>
+                </div>
+
+                <div class="header-features__item">
+                    <img class="header-features__item-img" src="/dist/img/icon/lock.svg" alt="" />
+                    <span class="header-features__item-span">Bezpieczne płatności</span>
+                </div>
+
+                <div class="header-features__item">
+                    <img class="header-features__item-img" src="/dist/img/icon/heart.svg" alt="" />
+                    <span class="header-features__item-span">Ponad 5000 zadowolonych klientów</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- /////////////////occasions///////////////////////// -->
+    <section class="occasions section-padding">
+        <div class="wrapper">
+            <div class="occasions__container">
+                <div class="occasions__top">
+                    <h2 class="occasions__heading">Wybierz kwiaty na wyjątkowe okazje</h2>
+
+                    <a href="okazje.html" class="occasions__link">
+                        Zobacz wszystkie okazje
+                        <span>→</span>
+                    </a>
+                </div>
+
+                <div class="occasions__cards">
+                    <a href="#" class="occasion-card">
+                        <img src="../dist/img/bouquet/bukiet na urodziny.png" alt="Bukiet na urodziny"
+                            class="occasion-card__img">
+
+                        <div class="occasion-card__content">
+                            <div class="occasion-card__icon">🎁</div>
+                            <h3 class="occasion-card__title">Urodziny</h3>
+                            <p class="occasion-card__text">Wyraź radość</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="occasion-card">
+                        <img src="../dist/img/bouquet/bukiet na rocznicę.png" alt="Bukiet na rocznicę"
+                            class="occasion-card__img">
+
+                        <div class="occasion-card__content">
+                            <div class="occasion-card__icon">♡</div>
+                            <h3 class="occasion-card__title">Rocznica</h3>
+                            <p class="occasion-card__text">Powiedz to kwiatami</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="occasion-card">
+                        <img src="../dist/img/bouquet/bukiet na dzień matki.png" alt="Bukiet na Dzień Matki"
+                            class="occasion-card__img">
+
+                        <div class="occasion-card__content">
+                            <div class="occasion-card__icon">❀</div>
+                            <h3 class="occasion-card__title">Dzień Matki</h3>
+                            <p class="occasion-card__text">Podziękuj miłością</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="occasion-card">
+                        <img src="../dist/img/bouquet/bukiet na ślub.png" alt="Bukiet ślubny"
+                            class="occasion-card__img">
+
+                        <div class="occasion-card__content">
+                            <div class="occasion-card__icon">♧</div>
+                            <h3 class="occasion-card__title">Ślub</h3>
+                            <p class="occasion-card__text">Najpiękniejszy dzień</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="occasion-card">
+                        <img src="../dist/img/bouquet/bukiet pogrzebowy.png" alt="Bukiet pogrzebowy"
+                            class="occasion-card__img">
+
+                        <div class="occasion-card__content">
+                            <div class="occasion-card__icon">☘</div>
+                            <h3 class="occasion-card__title">Pogrzeb</h3>
+                            <p class="occasion-card__text">Ostatnie pożegnanie</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="occasion-card">
+                        <img src="../dist/img/bouquet/Flower Boxy.png" alt="Flower box" class="occasion-card__img">
+
+                        <div class="occasion-card__content">
+                            <div class="occasion-card__icon">▣</div>
+                            <h3 class="occasion-card__title">Flower Boxy</h3>
+                            <p class="occasion-card__text">Elegancja w pudełku</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /////////////////////////bestsellers///////////////////// -->
+    <section class="bestsellers section-padding" id="bestsellers">
+        <div class="wrapper">
+            <div class="bestsellers__top">
+                <h2 class="bestsellers__title">Bestsellery</h2>
+
+                <a href="okazje.html" class="bestsellers__link">
+                    Zobacz wszystkie bukiety
+                    <span>→</span>
+                </a>
+            </div>
+
+            <div class="bestsellers__slider">
+                <button class="bestsellers__arrow bestsellers__arrow--left"><i
+                        class="fa-solid fa-chevron-left"></i></button>
+
+                <div class="bestsellers__cards">
+                    <div class="bestsellers__card">
+                        <img src="/dist/img/bestsellers/bukiet pastelowe marzenie.png" alt="Pastelowe Marzenie"
+                            class="bestsellers__img">
+                        <div class="bestsellers__info">
+                            <div>
+                                <h3>Pastelowe Marzenie</h3>
+                                <p>199 zł</p>
+                            </div>
+                            <button class="bestsellers__cart">♡</button>
+                        </div>
+                    </div>
+
+                    <div class="bestsellers__card">
+                        <img src="/dist/img/bestsellers/Bukiet słoneczny poranek.png" alt="Słoneczny Poranek"
+                            class="bestsellers__img">
+                        <div class="bestsellers__info">
+                            <div>
+                                <h3>Słoneczny Poranek</h3>
+                                <p>199 zł</p>
+                            </div>
+                            <button class="bestsellers__cart">♡</button>
+                        </div>
+                    </div>
+
+                    <div class="bestsellers__card">
+                        <img src="/dist/img/bestsellers/Bukiet biała klasyka.png" alt="Biała Klasyka"
+                            class="bestsellers__img">
+                        <div class="bestsellers__info">
+                            <div>
+                                <h3>Biała Klasyka</h3>
+                                <p>189 zł</p>
+                            </div>
+                            <button class="bestsellers__cart">♡</button>
+                        </div>
+                    </div>
+                    <div class="bestsellers__card">
+                        <img src="/dist/img/bestsellers/Bukiet peonia love.png" alt="Peonia Love"
+                            class="bestsellers__img">
+                        <div class="bestsellers__info">
+                            <div>
+                                <h3>Peonia Love</h3>
+                                <p>249 zł</p>
+                            </div>
+                            <button class="bestsellers__cart">♡</button>
+                        </div>
+                    </div>
+                    <div class="bestsellers__card">
+                        <img src="/dist/img/bestsellers/Bukiet czerwona klasyka.png" alt="Czerwona klasyka"
+                            class="bestsellers__img">
+                        <div class="bestsellers__info">
+                            <div>
+                                <h3>Czerwona Klasyka</h3>
+                                <p>250 zł</p>
+                            </div>
+                            <button class="bestsellers__cart">♡</button>
+                        </div>
+                    </div>
+                    <div class="bestsellers__card">
+                        <img src="/dist/img/bestsellers/Bukiet pudrowa elegancja.png" alt="Pudrowa Elegancja"
+                            class="bestsellers__img">
+                        <div class="bestsellers__info">
+                            <div>
+                                <h3>Pudrowa Elegancja</h3>
+                                <p>229 zł</p>
+                            </div>
+                            <button class="bestsellers__cart">♡</button>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="bestsellers__arrow bestsellers__arrow--right"><i
+                        class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+    <!-- //////////////delivery///////////////// -->
+    <section class="delivery">
+        <div class="wrapper">
+            <div class="delivery__box">
+                <div class="delivery__img"></div>
+
+                <div class="delivery__content">
+                    <p class="delivery__eyebrow">Dostawa tego samego dnia</p>
+                    <h2 class="delivery__title">
+                        Zamów do 14:00,<br>
+                        <span>dostarczymy dziś!</span>
+                        <p class="delivery__title-add">Na terenie Luzina i okolic</p>
+                    </h2>
+                    <a href="#" class="delivery__btn">
+                        Sprawdź szczegóły
+                        <span>→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ////////////////SOCIAL//////////////// -->
+
+<section class="social-proof section-padding">
+	<div class="wrapper">
+		<div class="social-proof__box">
+			<div class="reviews">
+				<h2 class="social-proof__title">Co mówią nasi klienci</h2>
+
+				<div class="reviews__cards">
+					<div class="reviews__card">
+						<i class="fa-brands fa-google reviews__google"></i>
+						<div class="reviews__stars">★★★★★</div>
+						<p class="reviews__text">“Przepiękne bukiety i ekspresowa dostawa. Mama była zachwycona!”</p>
+
+						<div class="reviews__author">
+							<span>Katarzyna</span>
+						</div>
+					</div>
+
+					<div class="reviews__card">
+						<i class="fa-brands fa-google reviews__google"></i>
+						<div class="reviews__stars">★★★★★</div>
+						<p class="reviews__text">“Najlepsza kwiaciarnia w mieście. Świeże kwiaty i cudowna obsługa.”</p>
+						<div class="reviews__author">
+							<span>Michał</span>
+						</div>
+					</div>
+
+					<div class="reviews__card">
+						<i class="fa-brands fa-google reviews__google"></i>
+						<div class="reviews__stars">★★★★★</div>
+						<p class="reviews__text">“Zamawiałam na ślub — dekoracje były absolutnie zjawiskowe!”</p>
+						<div class="reviews__author">
+							<span>Agnieszka</span>
+						</div>
+					</div>
+					<div class="reviews__card">
+						<i class="fa-brands fa-google reviews__google"></i>
+						<div class="reviews__stars">★★★★★</div>
+						<p class="reviews__text">“Zamawiałam na ślub — dekoracje były absolutnie zjawiskowe!”</p>
+						<div class="reviews__author">
+							<span>Monika</span>
+						</div>
+					</div>
+					<div class="reviews__card">
+						<i class="fa-brands fa-google reviews__google"></i>
+						<div class="reviews__stars">★★★★★</div>
+						<p class="reviews__text">“Zamawiałam na ślub — dekoracje były absolutnie zjawiskowe!”</p>
+						<div class="reviews__author">
+							<span>Monika</span>
+						</div>
+					</div>
+					<div class="reviews__card">
+						<i class="fa-brands fa-google reviews__google"></i>
+						<div class="reviews__stars">★★★★★</div>
+						<p class="reviews__text">“Zamawiałam na ślub — dekoracje były absolutnie zjawiskowe!”</p>
+						<div class="reviews__author">
+							<span>Monika</span>
+						</div>
+					</div>
+					<div class="reviews__card">
+						<i class="fa-brands fa-google reviews__google"></i>
+						<div class="reviews__stars">★★★★★</div>
+						<p class="reviews__text">“Zamawiałam na ślub — dekoracje były absolutnie zjawiskowe!”</p>
+						<div class="reviews__author">
+							<span>Monika</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="reviews__dots">
+					<span class="reviews__dot reviews__dot--active"></span>
+					<span class="reviews__dot"></span>
+					<span class="reviews__dot"></span>
+				</div>
+			</div>
+
+			<div class="instagram">
+				<h2 class="social-proof__title">Zainspiruj się na Instagramie</h2>
+
+				<div class="instagram__grid">
+					<img src="/dist/img/bestsellers/Bukiet czerwona klasyka.png" alt="Bukiet róż">
+					<img src="../dist/img/bestsellers/Bukiet biała klasyka.png" alt="Bukiet ślubny">
+					<img src="../dist/img/bestsellers/Bukiet słoneczny poranek.png" alt="Kwiaty w dłoniach">
+					<img src="../dist/img/bouquet/Flower Boxy.png" alt="Kompozycja kwiatowa">
+				</div>
+
+				<a href="#" class="instagram__btn">
+					Obserwuj nas
+					<i class="fa-brands fa-instagram"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- ////////////strip/////////////// -->
+
+<section class="features-strip">
+	<div class="wrapper">
+		<div class="features-strip__box">
+			<div class="features-strip__item">
+				<i class="fa-solid fa-gift"></i>
+				<p>Lokalna kwiaciarnia<br>z Luzina</p>
+			</div>
+
+			<div class="features-strip__item">
+				<i class="fa-solid fa-recycle"></i>
+				<p>Ekologiczne<br>pakowanie</p>
+			</div>
+
+			<div class="features-strip__item">
+				<i class="fa-regular fa-heart"></i>
+				<p>Gwarancja świeżości<br>albo zwrot pieniędzy</p>
+			</div>
+
+			<div class="features-strip__item">
+				<i class="fa-solid fa-shield-heart"></i>
+				<p>jesteśmy dla Ciebie</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer class="footer">
+	<div class="wrapper">
+		<div class="footer__top">
+			<div class="footer__brand">
+				<!-- <a href="#" class="footer__logo">BLOOM</a> -->
+				<p>KWIACIARNIA</p>
+
+				<p class="footer__text">
+					Tworzymy wyjątkowe kompozycje kwiatowe na każdą okazję.
+					Dostarczamy radość i piękno.
+				</p>
+
+				<div class="footer__socials">
+					<a href="#"><i class="fa-brands fa-instagram"></i></a>
+					<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+					<a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+				</div>
+			</div>
+
+			<div class="footer__col">
+				<h3>Sklep</h3>
+				<a href="#">Wszystkie bukiety</a>
+				<a href="#">Bestsellery</a>
+				<a href="#">Nowości</a>
+				<a href="#">Promocje</a>
+				<a href="#">Flower Boxy</a>
+				<a href="#">Rośliny</a>
+			</div>
+
+			<div class="footer__col">
+				<h3>Okazje</h3>
+				<a href="#">Urodziny</a>
+				<a href="#">Rocznica</a>
+				<a href="#">Dzień Matki</a>
+				<a href="#">Ślub</a>
+				<a href="#">Pogrzeb</a>
+				<a href="#">Dla niej</a>
+				<a href="#">Dla niego</a>
+			</div>
+
+			<div class="footer__col">
+				<h3>Informacje</h3>
+				<a href="#">O nas</a>
+				<a href="#">Dostawa i płatności</a>
+				<a href="#">Regulamin</a>
+				<a href="#">Polityka prywatności</a>
+				<a href="#">FAQ</a>
+				<a href="#">Kontakt</a>
+			</div>
+
+			<div class="footer__contact">
+				<h3>Kontakt</h3>
+
+				<p><i class="fa-solid fa-phone"></i> +48 586 781 143</p>
+				<p><i class="fa-regular fa-envelope"></i> kontakt@kwiaciarnia.pl</p>
+				<p><i class="fa-solid fa-location-dot"></i> ul. Lipowa 5<br>84-242 Luzino</p>
+				<p><i class="fa-regular fa-clock"></i> Pon - Pt: 9:00 - 18:00<br>Sob: 8:00 - 15:00</p>
+			</div>
+		</div>
+
+		<div class="footer__bottom">
+			<p>© 2026  DEKORACJA. PHU. BOLA D. Wszelkie prawa zastrzeżone.</p>
+			<p>Sylwia Lesner</p>
+		</div>
+	</div>
+</footer>
+
+    <script src="/dist/js/main.min.js"></script>
+</body>
+
+</html>

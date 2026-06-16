@@ -1,0 +1,48 @@
+@use 'colors' as *;
+
+@mixin fontInter {
+	font-family: 'Inter', sans-serif;
+	font-optical-sizing: auto;
+	// <weight>: Use a value from 100 to 900
+	// font-weight: <weight>;
+	// font-style: normal;
+}
+@mixin fontPlayfairDisplay {
+	font-family: 'Playfair Display', serif;
+	font-optical-sizing: auto;
+	// <weight>: Use a value from 400 to 900
+}
+
+@mixin heroImages($bgImg) {
+	background-image: $hero-gradient, $hero-gradient-all, url($bgImg);
+	min-height: 80vh;
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-size: clamp(500px, 45vw, 720px) auto;
+	-webkit-mask-image: linear-gradient(
+		to bottom,
+		black 0%,
+		black 85%,
+		transparent 100%
+	);
+	mask-image: linear-gradient(to bottom, black 0%, black 85%, transparent 100%);
+	@media (min-width: 48em) {
+		background-image: $hero-gradient, url($bgImg);
+	}
+	// @media (min-width: 75em) {
+	// 	.header__content{
+	// 		margin-left: 4em;
+	// 	}
+	// 	background-position: 100% center;
+	// 	@media (min-width: 62em) {
+	// 		background-position: 80% center;
+
+	// 		background-image: linear-gradient(
+	// 				to left,
+	// 				$color-surface-soft 0%,
+	// 				rgba(255, 255, 255, 0) 14%
+	// 			),
+	// 			$hero-gradient, url($bgImg);
+	// 	}
+	// }
+}

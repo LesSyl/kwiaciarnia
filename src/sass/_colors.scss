@@ -1,0 +1,21 @@
+$color-surface: #efefef; /* Główne tło - czysta biel */
+$color-surface-soft: #fbf9f8; /* Bardzo jasny beż (tło sekcji) */
+$color-surface-soft-bg: rgba(251, 249, 248, 0.9);
+$color-primary: #ff8a80; /* Główny akcent - koralowy róż (przyciski CTA) */
+$color-primary-light: rgba(255, 138, 128,.3); /* Główny akcent - koralowy róż (przyciski CTA) */
+$color-primary-dark: #d07168; 
+$color-primary-soft: #fff1f0; /* Bardzo jasny róż (tła przycisków pomocniczych) */
+// $color-primary-soft-bg:rgba(255, 241, 240,.9);
+$color-secondary: #8da189; /* Akcent botaniczny - szałwiowa zieleń */
+$color-text-main: #1c1c1c; /* Tekst główny - głęboki grafit */
+$color-text-muted: #6b6b6b; /* Tekst pomocniczy - stonowany szary */
+$color-outline: #f0eeee;
+$color-nav: rgba(239, 239, 239, 8); /* Kolor nawigacji*/
+
+$hero-gradient: linear-gradient(to right, #fbf9f8 0%, transparent 20vh),
+	linear-gradient(to top, #fbf9f8 0%, transparent 25%),
+	linear-gradient(to bottom, #fbf9f8 0%, transparent 25%);
+$hero-gradient-all:linear-gradient(
+			rgba(251, 249, 248, 0.4),
+			rgba(251, 249, 248, 0.4)
+		);

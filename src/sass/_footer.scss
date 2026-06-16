@@ -1,0 +1,107 @@
+@use './colors' as *;
+@use './mixin' as *;
+@use './animations' as *;
+.footer {
+	padding: 4em 1.5em 2em;
+	background-color: #fbf8f6;
+
+	&__top {
+		display: grid;
+		gap: 3em;
+	}
+
+	&__logo {
+		font-size: 3rem;
+		letter-spacing: 0.18em;
+		text-decoration: none;
+		color: $color-text-main;
+		@include fontPlayfairDisplay;
+	}
+
+	&__brand > p:first-of-type {
+		margin-bottom: 1.5em;
+		font-size: 1.1rem;
+		letter-spacing: 0.18em;
+	}
+
+	&__text {
+		max-width: 18em;
+		margin-bottom: 1.5em;
+		font-size: 1.3rem;
+		line-height: 1.6;
+	}
+
+	&__socials {
+		display: flex;
+		gap: 1.5em;
+
+		a {
+			font-size: 1.8rem;
+			color: #b8918d;
+		}
+	}
+
+	&__col,
+	&__contact {
+		display: flex;
+		flex-direction: column;
+		gap: 0.6em;
+
+		h3 {
+			margin-bottom: 0.6em;
+			font-size: 1.5rem;
+			color: $color-text-main;
+		}
+
+		a,
+		p {
+			font-size: 1.3rem;
+			line-height: 1.5;
+			text-decoration: none;
+			color: $color-text-main;
+		}
+	}
+
+	&__contact {
+		p {
+			display: flex;
+			gap: 1em;
+		}
+
+		i {
+			width: 1.2em;
+			color: #b8918d;
+			font-size: 1.5rem;
+		}
+	}
+
+	&__bottom {
+		display: flex;
+		flex-direction: column;
+		gap: 1em;
+		margin-top: 3em;
+		padding-top: 1.5em;
+		border-top: 1px solid rgba(0, 0, 0, 0.08);
+
+		p {
+			font-size: 1.2rem;
+			color: #777;
+		}
+	}
+}
+
+@media (min-width: 48em) {
+	.footer {
+		padding: 4em 0 2em;
+
+		&__top {
+			grid-template-columns: 1.4fr repeat(4, 1fr);
+			gap: 3em;
+		}
+
+		&__bottom {
+			flex-direction: row;
+			justify-content: space-between;
+		}
+	}
+}
