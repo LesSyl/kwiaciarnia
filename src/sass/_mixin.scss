@@ -29,20 +29,107 @@
 	@media (min-width: 48em) {
 		background-image: $hero-gradient, url($bgImg);
 	}
-	// @media (min-width: 75em) {
-	// 	.header__content{
-	// 		margin-left: 4em;
-	// 	}
-	// 	background-position: 100% center;
-	// 	@media (min-width: 62em) {
-	// 		background-position: 80% center;
+}
 
-	// 		background-image: linear-gradient(
-	// 				to left,
-	// 				$color-surface-soft 0%,
-	// 				rgba(255, 255, 255, 0) 14%
-	// 			),
-	// 			$hero-gradient, url($bgImg);
-	// 	}
-	// }
+.hero {
+	padding: 8em 0 4em;
+
+	&__box {
+		display: flex;
+		align-items: center;
+		min-height: 32em;
+		padding: 3em 2em;
+		border-radius: 1em;
+
+		background-image: linear-gradient(
+				rgba(248, 242, 240, 0.9),
+				rgba(248, 242, 240, 0.9)
+			),
+			url('/dist/img/bouquet/Flower Boxy.png');
+
+		background-size: cover;
+		background-position: center;
+	}
+
+	&__subtitle {
+		margin-bottom: 0.5em;
+		font-size: 6rem;
+		color: $color-primary-light;
+		font-family: 'Dancing Script', cursive;
+		font-weight: 400;
+	}
+
+	&__title {
+		margin-bottom: 0.4em;
+		font-size: 4rem;
+		@include fontPlayfairDisplay;
+	}
+
+	&__text {
+		max-width: 28em;
+		margin-bottom: 2em;
+		font-size: 1.5rem;
+		line-height: 1.7;
+	}
+
+	&__btn {
+		display: inline-flex;
+		padding: 1em 2em;
+		border-radius: 999px;
+		background: $color-primary;
+		color: #fff;
+		text-decoration: none;
+	}
+}
+
+.products {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 2em;
+}
+.product-card {
+	overflow: hidden;
+	border-radius: 1em;
+	background: #fff;
+	box-shadow: 0 0.5em 1.5em rgba(0, 0, 0, 0.06);
+
+	&__img {
+		width: 100%;
+		aspect-ratio: 1 / 1;
+		object-fit: cover;
+	}
+
+	&__body {
+		padding: 1.5em;
+		text-align: center;
+	}
+	&__name {
+		margin-bottom: 0.5em;
+		font-size: 1.8rem;
+	}
+
+	&__price {
+		margin-bottom: 1em;
+		font-size: 1.5rem;
+		font-weight: 700;
+	}
+
+	&__btn {
+		padding: 0.8em 1.8em;
+		border-radius: 999px;
+		border: 1px solid $color-primary;
+		background: transparent;
+	}
+}
+
+@media (min-width: 48em) {
+	.products {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (min-width: 75em) {
+	.products {
+		grid-template-columns: repeat(4, 1fr);
+	}
 }

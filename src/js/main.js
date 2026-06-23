@@ -133,5 +133,164 @@ faqItems.forEach(item => {
 	})
 })
 
-navBtn.addEventListener('click', handleNav)
+
+////////sklep/////////////////////
+
+
+const cartCounters = document.querySelectorAll(
+	'.cart-mobile__count, .cart-desktop__count'
+)
+
+const getCart = () => JSON.parse(localStorage.getItem('cart')) || []
+
+const saveCart = cart => {
+	localStorage.setItem('cart', JSON.stringify(cart))
+	updateCartCounter()
+}
+
+const getPriceNumber = price => {
+	return Number(price.replace(/[^\d,.]/g, '').replace(',', '.'))
+}
+
+const updateCartCounter = () => {
+	const cart = getCart()
+	const totalQuantity = cart.reduce((sum, item) => sum + item.quantity, 0)
+
+	cartCounters.forEach(counter => {
+		counter.textContent = totalQuantity
+	})
+}
+
+const getProductData = button => {
+	const card = button.closest('.product-card') || button.closest('.bestsellers__card')
+
+	if (!card) return null
+
+	const name =
+		card.querySelector('.product-card__name') ||
+		card.querySelector('h3')
+
+	const price =
+		card.querySelector('.product-card__price') ||
+		card.querySelector('p')
+
+	const img =
+		card.querySelector('.product-card__img') ||
+		card.querySelector('.bestsellers__img')
+
+	if (!name || !price || !img) return null
+
+	return {
+		name: name.textContent.trim(),
+		price: getPriceNumber(price.textContent),
+		img: img.getAttribute('src'),
+		quantity: 1,
+	}
+}
+
+
+document.querySelectorAll('.add-to-cart').forEach(button => {
+	button.addEventListener('click', () => {
+		const product = getProductData(button)
+
+		if (!product) return
+
+		const cart = getCart()
+		const existingProduct = cart.find(item => item.name === product.name)
+
+		if (existingProduct) {
+			existingProduct.quantity++
+		} else {
+			cart.push(product)
+		}
+
+		saveCart(cart)
+
+		const oldText = button.textContent
+
+		button.textContent = '✓'
+
+		setTimeout(() => {
+			button.textContent = oldText
+		}, 1200)
+	})
+})
+
+updateCartCounter()
+
+
+///koszyk///
+
+const cartItemsBox = document.querySelector('.cart-page__items')
+const cartTotal = document.querySelector('.cart-page__total')
+const clearCartBtn = document.querySelector('.cart-page__clear')
+
+const removeProduct = productName => {
+	const updatedCart = getCart().filter(item => item.name !== productName)
+
+	saveCart(updatedCart)
+	renderCartPage()
+}
+
+const renderCartPage = () => {
+	if (!cartItemsBox || !cartTotal) return
+
+	const cart = getCart()
+
+	cartItemsBox.innerHTML = ''
+
+	if (cart.length === 0) {
+		cartItemsBox.innerHTML = '<p class="cart-page__empty">Twój koszyk jest pusty.</p>'
+		cartTotal.textContent = '0 zł'
+		return
+	}
+
+	let total = 0
+
+	cart.forEach(item => {
+		const productTotal = item.price * item.quantity
+		total += productTotal
+
+		const product = document.createElement('div')
+		product.classList.add('cart-product')
+
+		product.innerHTML = `
+			<img src="${item.img}" alt="${item.name}">
+
+			<div class="cart-product__info">
+				<h2>${item.name}</h2>
+				<p>Cena: ${item.price} zł</p>
+				<span>Ilość: ${item.quantity}</span>
+				<strong>Suma: ${productTotal} zł</strong>
+			</div>
+
+			<button class="cart-product__remove" data-name="${item.name}">
+				Usuń
+			</button>
+		`
+
+		cartItemsBox.append(product)
+	})
+
+	cartTotal.textContent = `${total} zł`
+}
+
+if (cartItemsBox) {
+	cartItemsBox.addEventListener('click', e => {
+		if (e.target.classList.contains('cart-product__remove')) {
+			removeProduct(e.target.dataset.name)
+		}
+	})
+
+	renderCartPage()
+}
+
+if (clearCartBtn) {
+	clearCartBtn.addEventListener('click', () => {
+		localStorage.removeItem('cart')
+		updateCartCounter()
+		renderCartPage()
+	})
+}
+
 navBtn.addEventListener('click', handleNav)

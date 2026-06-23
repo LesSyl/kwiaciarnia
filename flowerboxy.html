@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <a class="cart-mobile" href="#cart" aria-label="Koszyk">
+    <a class="cart-mobile" href="koszyk.html" aria-label="Koszyk">
     <i class="fa-solid fa-cart-shopping"></i>
     <span class="cart-mobile__count">0</span>
 </a>
@@ -28,40 +28,41 @@
 <nav class="nav">
     <div class="nav-mobile">
         <a class="nav-mobile__items" href="index.html">Strona główna</a>
-        <!-- <a class="nav-mobile__items" href="#bouquets">Bukiety</a> -->
         <a class="nav-mobile__items" href="okazje.html">Okazje</a>
         <a class="nav-mobile__items" href="flowerboxy.html">Flower Boxy</a>
-        <a class="nav-mobile__items" href="#Weddings">Śluby</a>
-        <a class="nav-mobile__items" href="#aboutUs">O nas</a>
-        <a class="nav-mobile__items" href="#contact">Kontakt</a>
+        <a class="nav-mobile__items" href="sluby.html">Śluby</a>
+        <a class="nav-mobile__items" href="onas.html">O nas</a>
+        <a class="nav-mobile__items" href="kontakt.html">Kontakt</a>
+        <!-- <a class="nav-mobile__items" href="bukiet.html">Kontakt</a> -->
     </div>
     <div class="nav-desktop">
         <a class="nav-desktop__items" href="index.html">Strona główna</a>
         <!-- <a class="nav-desktop__items" href="#bouquets">Bukiety</a> -->
         <a class="nav-desktop__items" href="okazje.html">Okazje</a>
         <a class="nav-desktop__items" href="flowerboxy.html">Flower Boxy</a>
-        <a class="nav-desktop__items" href="#Weddings">Śluby</a>
-        <a class="nav-desktop__items" href="#aboutUs">O nas</a>
-        <a class="nav-desktop__items" href="#contact">Kontakt</a>
-        <a class="nav-desktop__cart" href="#cart" aria-label="Koszyk">
+        <a class="nav-desktop__items" href="sluby.html">Śluby</a>
+        <a class="nav-desktop__items" href="onas.html">O nas</a>
+        <a class="nav-desktop__items" href="kontakt.html">Kontakt</a>
+        <!-- <a class="nav-desktop__items" href="bukiet.html">bukiet</a> -->
+        <a class="cart-desktop" href="koszyk.html" aria-label="Koszyk">
             <i class="fa-solid fa-cart-shopping"></i>
-            <span class="nav-desktop__cart-count">0</span>
+            <span class="cart-desktop__count">0</span>
         </a>
     </div>
 
 </nav>
     <main>
-        <section class="flowerbox-hero">
+        <section class="hero">
             <div class="wrapper">
-                <div class="flowerbox-hero__box">
-                    <div class="flowerbox-hero__content">
-                        <p class="flowerbox-hero__subtitle">Flower Boxy</p>
+                <div class="hero__box">
+                    <div class="hero__content">
+                        <p class="hero__subtitle">Flower Boxy</p>
 
-                        <h1 class="flowerbox-hero__title">
+                        <h1 class="hero__title">
                             Kwiaty w wyjątkowej oprawie
                         </h1>
 
-                        <p class="flowerbox-hero__text">
+                        <p class="hero__text">
                             Eleganckie kompozycje kwiatowe zamknięte w ozdobnych
                             pudełkach. Idealne na prezent, rocznicę, urodziny
                             i każdą wyjątkową okazję.
@@ -72,65 +73,58 @@
             </div>
         </section>
 
-        <section class="flowerbox-products section-padding" id="collection">
+        <section class="section-products section-padding" id="collection">
             <div class="wrapper">
                 <div class="section-heading">
                     <h2>Nasze Flower Boxy</h2>
                     <div class="section-heading__decor"></div>
                 </div>
 
-                <div class="flowerbox-products__cards">
-                    <div class="flowerbox-card">
-                        <img src="/dist/img/flowerbox/flowerbox-1.jpg" alt="Delikatny róż"
-                            class="flowerbox-card__img" />
+                <div class="products">
+                    <div class="product-card">
+                        <img src="/dist/img/bouquet/Flower Boxy.png" alt="Delikatny Róż" class="product-card__img">
 
-                        <div class="flowerbox-card__body">
-                            <h3>Delikatny Róż</h3>
-                            <p>189 zł</p>
+                        <div class="product-card__body">
+                            <h3 class="product-card__name">Delikatny Róż</h3>
+                            <p class="product-card__price">189 zł</p>
 
-                            <button class="flowerbox-card__btn">
+                            <button class="product-card__btn add-to-cart">
                                 Dodaj do koszyka
                             </button>
                         </div>
                     </div>
+                    <div class="product-card">
+                        <img src="/dist/img/bouquet/Flower Boxy.png" alt="Biała Elegancja" class="product-card__img">
 
-                    <div class="flowerbox-card">
-                        <img src="/dist/img/flowerbox/flowerbox-2.jpg" alt="Biała elegancja"
-                            class="flowerbox-card__img" />
+                        <div class="product-card__body">
+                            <h3 class="product-card__name">Biała Elegancja</h3>
+                            <p class="product-card__price">199 zł</p>
 
-                        <div class="flowerbox-card__body">
-                            <h3>Biała Elegancja</h3>
-                            <p>199 zł</p>
-
-                            <button class="flowerbox-card__btn">
+                            <button class="product-card__btn add-to-cart">
                                 Dodaj do koszyka
                             </button>
                         </div>
                     </div>
+                    <div class="product-card">
+                        <img src="/dist/img/bouquet/Flower Boxy.png" alt="Lawendowe marzenie" class="product-card__img">
 
-                    <div class="flowerbox-card">
-                        <img src="/dist/img/flowerbox/flowerbox-3.jpg" alt="Lawendowe marzenie"
-                            class="flowerbox-card__img" />
+                        <div class="product-card__body">
+                            <h3 class="product-card__name">Lawendowe marzenie</h3>
+                            <p class="product-card__price">209 zł</p>
 
-                        <div class="flowerbox-card__body">
-                            <h3>Lawendowe Marzenie</h3>
-                            <p>209 zł</p>
-
-                            <button class="flowerbox-card__btn">
+                            <button class="product-card__btn add-to-cart">
                                 Dodaj do koszyka
                             </button>
                         </div>
                     </div>
+                    <div class="product-card">
+                        <img src="/dist/img/bouquet/Flower Boxy.png" alt="Klasyczna czerwień" class="product-card__img">
 
-                    <div class="flowerbox-card">
-                        <img src="/dist/img/flowerbox/flowerbox-4.jpg" alt="Klasyczna czerwień"
-                            class="flowerbox-card__img" />
+                        <div class="product-card__body">
+                            <h3 class="product-card__name">Klasyczna czerwień</h3>
+                            <p class="product-card__price">229 zł</p>
 
-                        <div class="flowerbox-card__body">
-                            <h3>Klasyczna Czerwień</h3>
-                            <p>229 zł</p>
-
-                            <button class="flowerbox-card__btn">
+                            <button class="product-card__btn add-to-cart">
                                 Dodaj do koszyka
                             </button>
                         </div>
@@ -139,33 +133,33 @@
             </div>
         </section>
 
-        <section class="flowerbox-benefits section-padding">
+        <section class="section-benefits section-padding">
             <div class="wrapper">
                 <div class="section-heading">
                     <h2>Dla kogo są Flower Boxy?</h2>
                     <div class="section-heading__decor"></div>
                 </div>
 
-                <div class="flowerbox-benefits__cards">
-                    <div class="flowerbox-benefits__card">
+                <div class="section-benefits__cards">
+                    <div class="section-benefits__card">
                         <i class="fa-solid fa-gift"></i>
                         <h3>Na prezent</h3>
                         <p>Idealne na urodziny, imieniny i rocznice.</p>
                     </div>
 
-                    <div class="flowerbox-benefits__card">
+                    <div class="section-benefits__card">
                         <i class="fa-regular fa-heart"></i>
                         <h3>Dla bliskich</h3>
                         <p>Piękny sposób na wyrażenie uczuć.</p>
                     </div>
 
-                    <div class="flowerbox-benefits__card">
+                    <div class="section-benefits__card">
                         <i class="fa-solid fa-house"></i>
                         <h3>Do domu</h3>
                         <p>Stylowa dekoracja każdego wnętrza.</p>
                     </div>
 
-                    <div class="flowerbox-benefits__card">
+                    <div class="section-benefits__card">
                         <i class="fa-solid fa-briefcase"></i>
                         <h3>Do firmy</h3>
                         <p>Elegancki upominek dla klientów i partnerów.</p>
@@ -296,15 +290,15 @@
 			<div class="footer__contact">
 				<h3>Kontakt</h3>
 
-				<p><i class="fa-solid fa-phone"></i> +48 586 781 143</p>
+				<p><i class="fa-solid fa-phone"></i> +48 000 000 000</p>
 				<p><i class="fa-regular fa-envelope"></i> kontakt@kwiaciarnia.pl</p>
-				<p><i class="fa-solid fa-location-dot"></i> ul. Lipowa 5<br>84-242 Luzino</p>
+				<p><i class="fa-solid fa-location-dot"></i> ul. kwiatowa 1<br>84-242 Luzino</p>
 				<p><i class="fa-regular fa-clock"></i> Pon - Pt: 9:00 - 18:00<br>Sob: 8:00 - 15:00</p>
 			</div>
 		</div>
 
 		<div class="footer__bottom">
-			<p>© 2026  DEKORACJA. PHU. BOLA D. Wszelkie prawa zastrzeżone.</p>
+			<p>© 2026  KWIACIARNIA Wszelkie prawa zastrzeżone.</p>
 			<p>Sylwia Lesner</p>
 		</div>
 	</div>

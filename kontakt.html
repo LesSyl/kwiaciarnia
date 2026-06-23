@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Okazje</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+		rel="stylesheet">
+	<script src="https://kit.fontawesome.com/684c9ec5ef.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="/dist/css/main.min.css">
+</head>
+
+<body>
+	<a class="cart-mobile" href="koszyk.html" aria-label="Koszyk">
+    <i class="fa-solid fa-cart-shopping"></i>
+    <span class="cart-mobile__count">0</span>
+</a>
+<button class="burger-btn">
+    <div class="burger-btn__box">
+        <div class="burger-btn__bars"></div>
+    </div>
+</button>
+<nav class="nav">
+    <div class="nav-mobile">
+        <a class="nav-mobile__items" href="index.html">Strona główna</a>
+        <a class="nav-mobile__items" href="okazje.html">Okazje</a>
+        <a class="nav-mobile__items" href="flowerboxy.html">Flower Boxy</a>
+        <a class="nav-mobile__items" href="sluby.html">Śluby</a>
+        <a class="nav-mobile__items" href="onas.html">O nas</a>
+        <a class="nav-mobile__items" href="kontakt.html">Kontakt</a>
+        <!-- <a class="nav-mobile__items" href="bukiet.html">Kontakt</a> -->
+    </div>
+    <div class="nav-desktop">
+        <a class="nav-desktop__items" href="index.html">Strona główna</a>
+        <!-- <a class="nav-desktop__items" href="#bouquets">Bukiety</a> -->
+        <a class="nav-desktop__items" href="okazje.html">Okazje</a>
+        <a class="nav-desktop__items" href="flowerboxy.html">Flower Boxy</a>
+        <a class="nav-desktop__items" href="sluby.html">Śluby</a>
+        <a class="nav-desktop__items" href="onas.html">O nas</a>
+        <a class="nav-desktop__items" href="kontakt.html">Kontakt</a>
+        <!-- <a class="nav-desktop__items" href="bukiet.html">bukiet</a> -->
+        <a class="cart-desktop" href="koszyk.html" aria-label="Koszyk">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart-desktop__count">0</span>
+        </a>
+    </div>
+
+</nav>
+
+<main>
+	<section class="contact-hero">
+		<div class="wrapper">
+			<div class="contact-hero__box">
+				<div class="contact-hero__content">
+					<p class="contact-hero__subtitle">Kontakt</p>
+					<h1 class="contact-hero__title">Masz pytanie? Chętnie pomożemy</h1>
+					<p class="contact-hero__text">
+						Doradzimy w wyborze bukietu, przygotujemy indywidualną kompozycję
+						lub wycenimy dekorację ślubną.
+					</p>
+
+					<div class="contact-hero__buttons">
+						<a href="tel:+48123456789">Zadzwoń</a>
+						<a href="mailto:kontakt@bloom.pl">Napisz wiadomość</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="contact-info section-padding">
+		<div class="wrapper">
+			<div class="contact-info__cards">
+				<div class="contact-info__card">
+					<i class="fa-solid fa-phone"></i>
+					<h2>Telefon</h2>
+					<a href="tel:+48123456789">+48 000 000 000</a>
+				</div>
+
+				<div class="contact-info__card">
+					<i class="fa-regular fa-envelope"></i>
+					<h2>E-mail</h2>
+					<a href="mailto:kontakt@bloom.pl">kontakt@kwiaciarnia.pl</a>
+				</div>
+
+				<div class="contact-info__card">
+					<i class="fa-solid fa-location-dot"></i>
+					<h2>Lokalizacja</h2>
+					<p>Luzino, woj. pomorskie</p>
+				</div>
+
+				<div class="contact-info__card">
+					<i class="fa-regular fa-clock"></i>
+					<h2>Godziny otwarcia</h2>
+					<p>Pon - Pt: 8:00 - 20:00<br>Sob - Nd: 9:00 - 18:00</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="contact-form section-padding">
+		<div class="wrapper">
+			<div class="contact-form__box">
+				<div class="contact-form__content">
+					<p class="section-subtitle">Napisz do nas</p>
+					<h2>Wyślij wiadomość</h2>
+					<p>
+						Opisz, czego potrzebujesz — bukietu, flower boxa, dekoracji ślubnej
+						lub indywidualnej kompozycji.
+					</p>
+
+					<form>
+						<input type="text" placeholder="Imię" required>
+						<input type="email" placeholder="Adres e-mail" required>
+						<input type="tel" placeholder="Telefon">
+						<input type="text" placeholder="Temat">
+						<textarea placeholder="Wiadomość" required></textarea>
+
+						<button type="submit">Wyślij wiadomość</button>
+					</form>
+				</div>
+
+				<img src="/dist/img/florystka.jpg" alt="Florystka przygotowuje bukiet">
+			</div>
+		</div>
+	</section>
+
+	<section class="contact-special section-padding">
+		<div class="wrapper">
+			<div class="contact-special__box">
+				<div>
+					<p class="section-subtitle">Zamówienia specjalne</p>
+					<h2>Potrzebujesz czegoś wyjątkowego?</h2>
+					<p>
+						Tworzymy kompozycje na każdą okazję — od bukietów na prezent,
+						przez flower boxy, aż po dekoracje ślubne i firmowe.
+					</p>
+				</div>
+
+				<ul>
+					<li>Bukiety na zamówienie</li>
+					<li>Flower Boxy</li>
+					<li>Dekoracje ślubne</li>
+					<li>Dekoracje kościołów</li>
+					<li>Dekoracje komunijne</li>
+					<li>Kompozycje firmowe</li>
+				</ul>
+
+				<a href="mailto:kontakt@bloom.pl">Zapytaj o wycenę</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="contact-delivery section-padding">
+		<div class="wrapper">
+			<div class="section-heading">
+				<h2>Gdzie dostarczamy kwiaty?</h2>
+				<div class="section-heading__decor"></div>
+			</div>
+
+			<div class="contact-delivery__places">
+				<span>Luzino</span>
+				<span>Wejherowo</span>
+				<span>Gościcino</span>
+				<span>Bolszewo</span>
+				<span>Reda</span>
+				<span>Rumia</span>
+				<span>Gdynia</span>
+			</div>
+		</div>
+	</section>
+
+	<section class="contact-map section-padding">
+		<div class="wrapper">
+			<div class="section-heading">
+				<h2>Znajdź nas</h2>
+				<div class="section-heading__decor"></div>
+			</div>
+
+			<div class="contact-map__box">
+				<iframe
+					src="https://www.google.com/maps?q=Luzino&output=embed"
+					loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade">
+				</iframe>
+			</div>
+		</div>
+	</section>
+
+	<section class="contact-cta">
+		<div class="wrapper">
+			<div class="contact-cta__box">
+				<div class="contact-cta__content">
+					<h2>Zamów kwiaty z dostawą w Luzinie i okolicach</h2>
+					<p>
+						Wybierz bukiet, flower box lub kompozycję stworzoną specjalnie
+						na wyjątkową okazję.
+					</p>
+					<a href="okazje.html">Wybierz idealny bukiet</a>
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
+
+
+    	<footer class="footer">
+	<div class="wrapper">
+		<div class="footer__top">
+			<div class="footer__brand">
+				<!-- <a href="#" class="footer__logo">BLOOM</a> -->
+				<p>KWIACIARNIA</p>
+
+				<p class="footer__text">
+					Tworzymy wyjątkowe kompozycje kwiatowe na każdą okazję.
+					Dostarczamy radość i piękno.
+				</p>
+
+				<div class="footer__socials">
+					<a href="#"><i class="fa-brands fa-instagram"></i></a>
+					<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+					<a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+				</div>
+			</div>
+
+			<div class="footer__col">
+				<h3>Sklep</h3>
+				<a href="#">Wszystkie bukiety</a>
+				<a href="#">Bestsellery</a>
+				<a href="#">Nowości</a>
+				<a href="#">Promocje</a>
+				<a href="#">Flower Boxy</a>
+				<a href="#">Rośliny</a>
+			</div>
+
+			<div class="footer__col">
+				<h3>Okazje</h3>
+				<a href="#">Urodziny</a>
+				<a href="#">Rocznica</a>
+				<a href="#">Dzień Matki</a>
+				<a href="#">Ślub</a>
+				<a href="#">Pogrzeb</a>
+				<a href="#">Dla niej</a>
+				<a href="#">Dla niego</a>
+			</div>
+
+			<div class="footer__col">
+				<h3>Informacje</h3>
+				<a href="#">O nas</a>
+				<a href="#">Dostawa i płatności</a>
+				<a href="#">Regulamin</a>
+				<a href="#">Polityka prywatności</a>
+				<a href="#">FAQ</a>
+				<a href="#">Kontakt</a>
+			</div>
+
+			<div class="footer__contact">
+				<h3>Kontakt</h3>
+
+				<p><i class="fa-solid fa-phone"></i> +48 000 000 000</p>
+				<p><i class="fa-regular fa-envelope"></i> kontakt@kwiaciarnia.pl</p>
+				<p><i class="fa-solid fa-location-dot"></i> ul. kwiatowa 1<br>84-242 Luzino</p>
+				<p><i class="fa-regular fa-clock"></i> Pon - Pt: 9:00 - 18:00<br>Sob: 8:00 - 15:00</p>
+			</div>
+		</div>
+
+		<div class="footer__bottom">
+			<p>© 2026  KWIACIARNIA Wszelkie prawa zastrzeżone.</p>
+			<p>Sylwia Lesner</p>
+		</div>
+	</div>
+</footer>
+	 <script src="/dist/js/main.min.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Koszyk | Bloom Kwiaciarnia</title>
+
+	<link rel="stylesheet" href="/dist/css/main.min.css">
+	<script src="https://kit.fontawesome.com/684c9ec5ef.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+	<a class="cart-mobile" href="koszyk.html" aria-label="Koszyk">
+    <i class="fa-solid fa-cart-shopping"></i>
+    <span class="cart-mobile__count">0</span>
+</a>
+<button class="burger-btn">
+    <div class="burger-btn__box">
+        <div class="burger-btn__bars"></div>
+    </div>
+</button>
+<nav class="nav">
+    <div class="nav-mobile">
+        <a class="nav-mobile__items" href="index.html">Strona główna</a>
+        <a class="nav-mobile__items" href="okazje.html">Okazje</a>
+        <a class="nav-mobile__items" href="flowerboxy.html">Flower Boxy</a>
+        <a class="nav-mobile__items" href="sluby.html">Śluby</a>
+        <a class="nav-mobile__items" href="onas.html">O nas</a>
+        <a class="nav-mobile__items" href="kontakt.html">Kontakt</a>
+        <!-- <a class="nav-mobile__items" href="bukiet.html">Kontakt</a> -->
+    </div>
+    <div class="nav-desktop">
+        <a class="nav-desktop__items" href="index.html">Strona główna</a>
+        <!-- <a class="nav-desktop__items" href="#bouquets">Bukiety</a> -->
+        <a class="nav-desktop__items" href="okazje.html">Okazje</a>
+        <a class="nav-desktop__items" href="flowerboxy.html">Flower Boxy</a>
+        <a class="nav-desktop__items" href="sluby.html">Śluby</a>
+        <a class="nav-desktop__items" href="onas.html">O nas</a>
+        <a class="nav-desktop__items" href="kontakt.html">Kontakt</a>
+        <!-- <a class="nav-desktop__items" href="bukiet.html">bukiet</a> -->
+        <a class="cart-desktop" href="koszyk.html" aria-label="Koszyk">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart-desktop__count">0</span>
+        </a>
+    </div>
+
+</nav>
+
+	<main>
+		<section class="cart-page">
+			<div class="wrapper">
+				<h1 class="cart-page__title">Twój koszyk</h1>
+
+				<div class="cart-page__content">
+					<div class="cart-page__items"></div>
+
+					<div class="cart-page__summary">
+						<h2>Podsumowanie</h2>
+						<p>Razem: <span class="cart-page__total">0 zł</span></p>
+
+						<a href="kontakt.html" class="cart-page__btn">
+							Przejdź do zamówienia
+						</a>
+
+						<button class="cart-page__clear">
+							Wyczyść koszyk
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+	<div class="wrapper">
+		<div class="footer__top">
+			<div class="footer__brand">
+				<!-- <a href="#" class="footer__logo">BLOOM</a> -->
+				<p>KWIACIARNIA</p>
+
+				<p class="footer__text">
+					Tworzymy wyjątkowe kompozycje kwiatowe na każdą okazję.
+					Dostarczamy radość i piękno.
+				</p>
+
+				<div class="footer__socials">
+					<a href="#"><i class="fa-brands fa-instagram"></i></a>
+					<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+					<a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+				</div>
+			</div>
+
+			<div class="footer__col">
+				<h3>Sklep</h3>
+				<a href="#">Wszystkie bukiety</a>
+				<a href="#">Bestsellery</a>
+				<a href="#">Nowości</a>
+				<a href="#">Promocje</a>
+				<a href="#">Flower Boxy</a>
+				<a href="#">Rośliny</a>
+			</div>
+
+			<div class="footer__col">
+				<h3>Okazje</h3>
+				<a href="#">Urodziny</a>
+				<a href="#">Rocznica</a>
+				<a href="#">Dzień Matki</a>
+				<a href="#">Ślub</a>
+				<a href="#">Pogrzeb</a>
+				<a href="#">Dla niej</a>
+				<a href="#">Dla niego</a>
+			</div>
+
+			<div class="footer__col">
+				<h3>Informacje</h3>
+				<a href="#">O nas</a>
+				<a href="#">Dostawa i płatności</a>
+				<a href="#">Regulamin</a>
+				<a href="#">Polityka prywatności</a>
+				<a href="#">FAQ</a>
+				<a href="#">Kontakt</a>
+			</div>
+
+			<div class="footer__contact">
+				<h3>Kontakt</h3>
+
+				<p><i class="fa-solid fa-phone"></i> +48 000 000 000</p>
+				<p><i class="fa-regular fa-envelope"></i> kontakt@kwiaciarnia.pl</p>
+				<p><i class="fa-solid fa-location-dot"></i> ul. kwiatowa 1<br>84-242 Luzino</p>
+				<p><i class="fa-regular fa-clock"></i> Pon - Pt: 9:00 - 18:00<br>Sob: 8:00 - 15:00</p>
+			</div>
+		</div>
+
+		<div class="footer__bottom">
+			<p>© 2026  KWIACIARNIA Wszelkie prawa zastrzeżone.</p>
+			<p>Sylwia Lesner</p>
+		</div>
+	</div>
+</footer>
+
+	<script src="/dist/js/main.min.js"></script>
+</body>
+
+</html>

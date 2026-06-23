@@ -1,0 +1,420 @@
+@use './colors' as *;
+@use './mixin' as *;
+
+.weddings-hero {
+	padding: 8em 1.5em 4em;
+
+	&__box {
+		display: flex;
+		align-items: center;
+		min-height: 34em;
+		padding: 3em 2em;
+		border-radius: 1em;
+		background-image: linear-gradient(
+				rgba(248, 242, 240, 0.92),
+				rgba(248, 242, 240, 0.92)
+			),
+			url('/img/slubSection.png');
+		background-size: cover;
+		background-position: center;
+	}
+
+	&__subtitle {
+		margin-bottom: 0.8em;
+		font-size: 1.3rem;
+		font-weight: 700;
+		letter-spacing: 0.22em;
+		text-transform: uppercase;
+		color: $color-primary;
+	}
+
+	&__title {
+		max-width: 10em;
+		margin-bottom: 0.4em;
+		font-size: 4rem;
+		font-weight: 400;
+		line-height: 1.1;
+		color: $color-text-main;
+		@include fontPlayfairDisplay;
+	}
+
+	&__text {
+		max-width: 28em;
+		margin-bottom: 2em;
+		font-size: 1.5rem;
+		line-height: 1.7;
+		color: $color-text-main;
+	}
+
+	&__btn {
+		display: inline-flex;
+		padding: 0.9em 2em;
+		border: 1px solid $color-primary;
+		border-radius: 2em;
+		font-size: 1.2rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		text-decoration: none;
+		color: $color-text-main;
+		background-color: rgba(255, 255, 255, 0.4);
+	}
+}
+
+.section-subtitle {
+	margin-bottom: 0.8em;
+	font-size: 1.2rem;
+	font-weight: 700;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	color: $color-primary;
+}
+
+.weddings-intro {
+	padding-inline: 1.5em;
+
+	&__box {
+		display: grid;
+		gap: 2em;
+
+		h2 {
+			font-size: 3rem;
+			font-weight: 400;
+			line-height: 1.2;
+			color: $color-text-main;
+			@include fontPlayfairDisplay;
+		}
+
+		p {
+			font-size: 1.5rem;
+			line-height: 1.8;
+			color: $color-text-main;
+		}
+		// &-one {
+		// 	display: flex;
+		// 	flex-direction: column;
+		// 	justify-content: center;
+		// 	align-items: center;
+		// }
+	}
+}
+
+.weddings-offer,
+.weddings-process,
+.weddings-packages,
+.weddings-gallery,
+.weddings-faq,
+.weddings-contact {
+	padding-inline: 1.5em;
+}
+
+.weddings-offer {
+	&__cards {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 1.5em;
+	}
+}
+
+.wedding-card {
+	overflow: hidden;
+	border: 1px solid rgba(0, 0, 0, 0.08);
+	border-radius: 1em;
+	background-color: #fff;
+	box-shadow: 0 0.4em 1.5em rgba(0, 0, 0, 0.05);
+
+	img {
+		display: block;
+		width: 100%;
+		aspect-ratio: 4 / 3;
+		object-fit: cover;
+	}
+
+	&__body {
+		padding: 1.6em;
+
+		h3 {
+			margin-bottom: 0.6em;
+			font-size: 1.7rem;
+			color: $color-text-main;
+		}
+
+		p {
+			font-size: 1.3rem;
+			line-height: 1.6;
+			color: $color-text-main;
+		}
+	}
+}
+
+.weddings-process {
+	background-color: #faf8f7;
+
+	&__steps {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 1.5em;
+	}
+
+	&__step {
+		padding: 2em;
+		border-radius: 1em;
+		background-color: #fff;
+		text-align: center;
+
+		span {
+			display: inline-flex;
+			justify-content: center;
+			align-items: center;
+			width: 3em;
+			height: 3em;
+			margin-bottom: 1em;
+			border-radius: 50%;
+			background-color: #f8f2f0;
+			font-size: 1.2rem;
+			font-weight: 700;
+			color: $color-primary;
+		}
+
+		h3 {
+			margin-bottom: 0.5em;
+			font-size: 1.7rem;
+		}
+
+		p {
+			font-size: 1.3rem;
+			line-height: 1.6;
+		}
+	}
+}
+
+.weddings-packages {
+	&__cards {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 1.5em;
+	}
+}
+
+.weddings-package {
+	padding: 2.5em 2em;
+	border: 1px solid rgba(0, 0, 0, 0.08);
+	border-radius: 1em;
+	text-align: center;
+	background-color: #fff;
+
+	&--featured {
+		background-color: #f8f2f0;
+		border-color: $color-primary;
+	}
+
+	h3 {
+		margin-bottom: 0.6em;
+		font-size: 2rem;
+		@include fontPlayfairDisplay;
+	}
+
+	p {
+		margin-bottom: 1.5em;
+		font-size: 1.4rem;
+		line-height: 1.6;
+	}
+
+	a {
+		display: inline-flex;
+		padding: 0.8em 1.8em;
+		border: 1px solid $color-primary;
+		border-radius: 2em;
+		font-size: 1.2rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		text-decoration: none;
+		color: $color-text-main;
+	}
+}
+
+.weddings-gallery {
+	&__grid {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 1em;
+
+		img {
+			width: 100%;
+			aspect-ratio: 4 / 3;
+			border-radius: 1em;
+			object-fit: cover;
+		}
+	}
+}
+
+.weddings-faq {
+	&__accordion {
+		max-width: 80em;
+		margin: 0 auto;
+	}
+
+	&__item {
+		margin-bottom: 1em;
+		border: 1px solid rgba(0, 0, 0, 0.08);
+		border-radius: 1em;
+		background-color: #fff;
+		overflow: hidden;
+	}
+
+	&__question {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		padding: 1.4em 1.8em;
+		border: none;
+		background: transparent;
+		cursor: pointer;
+		font-size: 1.5rem;
+		font-weight: 600;
+		text-align: left;
+		color: $color-text-main;
+
+		i {
+			font-size: 1.4rem;
+			transition: transform 0.3s;
+		}
+	}
+
+	&__answer {
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.3s ease;
+
+		p {
+			padding: 0 1.8em 1.8em;
+			font-size: 1.4rem;
+			line-height: 1.7;
+		}
+	}
+
+	&__item.active {
+		.weddings-faq__answer {
+			max-height: 20em;
+		}
+
+		.weddings-faq__question i {
+			transform: rotate(45deg);
+		}
+	}
+}
+
+.weddings-contact {
+	&__box {
+		padding: 3em 2em;
+		border-radius: 1em;
+		background-color: #f8f2f0;
+		text-align: center;
+
+		h2 {
+			margin-bottom: 0.6em;
+			font-size: 3rem;
+			font-weight: 400;
+			@include fontPlayfairDisplay;
+		}
+
+		p {
+			max-width: 36em;
+			margin: 0 auto 1.5em;
+			font-size: 1.5rem;
+			line-height: 1.7;
+		}
+
+		a {
+			display: inline-flex;
+			padding: 0.9em 2em;
+			border: 1px solid $color-primary;
+			border-radius: 2em;
+			font-size: 1.2rem;
+			font-weight: 700;
+			text-transform: uppercase;
+			text-decoration: none;
+			color: $color-text-main;
+		}
+	}
+}
+
+@media (min-width: 36em) {
+	.weddings-offer__cards,
+	.weddings-gallery__grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.weddings-process__steps,
+	.weddings-packages__cards {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (min-width: 48em) {
+	.weddings-hero {
+		padding: 10em 0 4em;
+
+		&__box {
+			min-height: 42em;
+			padding: 4em 5em;
+			background-image: linear-gradient(
+					to right,
+					rgba(248, 242, 240, 1) 0%,
+					rgba(248, 242, 240, 0.88) 42%,
+					rgba(248, 242, 240, 0.08) 75%
+				),
+				url('/dist/img/slubSection.png');
+			background-position: right center;
+		}
+
+		&__title {
+			font-size: 5.6rem;
+		}
+	}
+
+	.weddings-intro,
+	.weddings-offer,
+	.weddings-process,
+	.weddings-packages,
+	.weddings-gallery,
+	.weddings-faq,
+	.weddings-contact {
+		padding-inline: 0;
+	}
+
+	.weddings-intro__box {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: auto 1em;
+		p {
+			margin-top: 2em;
+			text-align: center;
+			font-size: 2rem;
+		}
+	}
+	.section-subtitle {
+		display: none;
+	}
+}
+
+@media (min-width: 62em) {
+	.weddings-offer__cards {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.weddings-process__steps,
+	.weddings-packages__cards {
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	.weddings-packages__cards {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.weddings-gallery__grid {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}

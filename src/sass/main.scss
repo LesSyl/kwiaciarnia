@@ -4,8 +4,13 @@
 // @use './mixins' as *;
 @use './animations' as *;
 @use './footer' as *;
-@use './okazje';
+@use './occasions';
 @use './flowerboxy';
+@use './weddings';
+@use './about';
+@use './contact';
+@use './bouquet';
+@use './cart';
 
 * {
 	box-sizing: border-box;
@@ -47,9 +52,12 @@ a {
 	width: 100%;
 	max-width: 1200px;
 }
+.section-padding {
+	margin: 2em auto;
+}
 
 .section-heading {
-	margin: 3em auto;
+	margin: 4em auto;
 	text-align: center;
 
 	h2 {
@@ -287,35 +295,15 @@ a {
 		gap: var(--gap);
 		overflow-x: hidden;
 		scroll-behavior: smooth;
-		// display: flex;
-		// gap: 3em;
-		// overflow-x: auto;
-		// scroll-behavior: smooth;
-		// scroll-snap-type: x mandatory;
-		// padding: 0 4em 1em;
-
-		// scrollbar-width: none;
-		// -ms-overflow-style: none;
-
-		// &::-webkit-scrollbar {
-		// 	display: none;
-		// }
 	}
 
 	&__card {
 		flex: 0 0
 			calc((100% - (var(--cards-count) - 1) * var(--gap)) / var(--cards-count));
-		overflow: hidden;
+		// overflow: hidden;
 		border-radius: 14px;
 		background-color: #fff;
 		box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
-		// flex: 0 0 100%;
-		// max-width: 100%;
-		// overflow: hidden;
-		// border-radius: 14px;
-		// background-color: #fff;
-		// box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
-		// scroll-snap-align: center;
 	}
 
 	&__img {
@@ -668,6 +656,9 @@ a {
 }
 
 @media (min-width: 40em) {
+	.section-padding {
+		padding: 7em auto;
+	}
 	.header {
 		&__heading {
 			font-size: 4rem;
@@ -701,11 +692,14 @@ a {
 	}
 }
 @media (min-width: 48em) {
+	.section-heading {
+		margin: 7em auto;
+	}
 	.header {
+		margin-top: 6em;
 		&__content {
 			width: 100%;
 			max-width: 50%;
-			// padding: 0 2em 0 0;
 			text-align: left;
 		}
 		&__heading {

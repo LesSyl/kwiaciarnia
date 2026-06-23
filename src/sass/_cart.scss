@@ -1,0 +1,137 @@
+@use './colors' as *;
+@use './mixin' as *;
+
+.cart-page {
+	padding: 10em 1.5em 5em;
+
+	&__title {
+		margin-bottom: 1em;
+		font-size: 4rem;
+		font-weight: 400;
+		color: $color-text-main;
+		@include fontPlayfairDisplay;
+	}
+
+	&__content {
+		display: grid;
+		gap: 2em;
+	}
+
+	&__items {
+		display: grid;
+		gap: 1.5em;
+	}
+
+	&__empty {
+		font-size: 1.5rem;
+	}
+
+	&__summary {
+		padding: 2em;
+		border-radius: 1em;
+		background-color: #f8f2f0;
+
+		h2 {
+			margin-bottom: 1em;
+			font-size: 2rem;
+		}
+
+		p {
+			margin-bottom: 1.5em;
+			font-size: 1.6rem;
+			font-weight: 700;
+		}
+	}
+
+	&__btn,
+	&__clear {
+		display: inline-flex;
+		width: fit-content;
+		padding: 0.9em 2em;
+		border: 1px solid $color-primary;
+		border-radius: 2em;
+		font-size: 1.2rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		text-decoration: none;
+		color: $color-text-main;
+		background-color: transparent;
+		cursor: pointer;
+	}
+
+	&__clear {
+		margin-top: 1em;
+	}
+}
+
+.cart-product {
+	display: grid;
+	grid-template-columns: 8em 1fr;
+	gap: 1em;
+	align-items: center;
+	padding: 1em;
+	border: 1px solid rgba(0, 0, 0, 0.08);
+	border-radius: 1em;
+	background-color: #fff;
+
+	img {
+		width: 8em;
+		height: 8em;
+		border-radius: 0.8em;
+		object-fit: cover;
+	}
+
+	&__info {
+		h2 {
+			margin-bottom: 0.4em;
+			font-size: 1.5rem;
+		}
+
+		p,
+		span {
+			display: block;
+			font-size: 1.3rem;
+		}
+	}
+
+	&__remove {
+		grid-column: 1 / -1;
+		width: fit-content;
+		padding: 0.7em 1.5em;
+		border: 1px solid rgba(0, 0, 0, 0.2);
+		border-radius: 2em;
+		background-color: transparent;
+		font-size: 1.1rem;
+		cursor: pointer;
+	}
+}
+
+@media (min-width: 48em) {
+	.cart-page {
+		padding: 12em 2em 6em;
+
+		&__content {
+			grid-template-columns: 1fr 32em;
+			align-items: start;
+		}
+	}
+
+	.cart-product {
+		grid-template-columns: 10em 1fr auto;
+
+		img {
+			width: 10em;
+			height: 10em;
+		}
+
+		&__remove {
+			grid-column: auto;
+		}
+	}
+}
+
+@media (min-width: 75em) {
+	.cart-page {
+		padding-inline: 0;
+	}
+}
