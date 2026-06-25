@@ -19,7 +19,7 @@
 				rgba(248, 242, 240, 0.7),
 				rgba(248, 242, 240, 0.7)
 			),
-			url('/dist/img/occasionsSection.png');
+			url('./dist/img/occasionsSection.png');
 		background-size: cover;
 		background-position: center;
 	}
@@ -161,7 +161,7 @@
 					rgba(248, 242, 240, 0.9) 35%,
 					rgba(248, 242, 240, 0.15) 70%
 				),
-				url('/dist/img/occasionsSection.png');
+				url('./dist/img/occasionsSection.png');
 			// background-position: 50% right;
 		}
 

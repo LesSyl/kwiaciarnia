@@ -14,7 +14,7 @@
 				rgba(248, 242, 240, 0.92),
 				rgba(248, 242, 240, 0.92)
 			),
-			url('/dist/img/onasSection.png');
+			url('./dist/img/onasSection.png');
 		background-size: cover;
 		background-position: center;
 	}
@@ -242,7 +242,7 @@
 				rgba(248, 242, 240, 0.9),
 				rgba(248, 242, 240, 0.9)
 			),
-			url('/dist/img/occasionsSection.png');
+			url('./dist/img/occasionsSection.png');
 		background-size: cover;
 		background-position: center;
 	}
@@ -297,7 +297,7 @@
 					rgba(248, 242, 240, 0.88) 42%,
 					rgba(248, 242, 240, 0.08) 75%
 				),
-				url('/dist/img/onasSection.png');
+				url('./dist/img/onasSection.png');
 			background-position: right center;
 		}
 
@@ -332,7 +332,7 @@
 					rgba(248, 242, 240, 0.86) 45%,
 					rgba(248, 242, 240, 0.08) 75%
 				),
-				url('/dist/img/occasionsSection.png');
+				url('./dist/img/occasionsSection.png');
 			background-position: right center;
 		}
 

@@ -85,7 +85,7 @@ a {
 	padding: 2em;
 	min-height: 80vh;
 	text-align: start;
-	@include heroImages('../img/heroImg.png');
+	@include heroImages('./img/heroImg.png');
 	background-attachment: scroll;
 	z-index: 0;
 
@@ -391,7 +391,7 @@ a {
 	&__img {
 		position: absolute;
 		inset: 0;
-		background-image: url('../img/deliverySection.png');
+		background-image: url('./img/deliverySection.png');
 		background-size: cover;
 		background-position: center;
 		z-index: 1;
