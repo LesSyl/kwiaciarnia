@@ -2,7 +2,7 @@ const nav = document.querySelector('.nav-mobile')
 const navBtn = document.querySelector('.burger-btn')
 const allNavItems = document.querySelectorAll('.nav-mobile__items')
 const navScroll = document.querySelector('.nav')
-const faqItems = document.querySelectorAll('.flowerbox-faq__item')
+const faqItems = document.querySelectorAll('.faq__item')
 
 window.addEventListener('scroll', () => {
 	if (window.scrollY > 50) {
@@ -116,7 +116,7 @@ sliders.forEach(slider => {
 //////////////FAQ////////////////
 
 faqItems.forEach(item => {
-	const question = item.querySelector('.flowerbox-faq__question')
+	const question = item.querySelector('.faq__question')
 
 	question.addEventListener('click', () => {
 		const isActive = item.classList.contains('active')

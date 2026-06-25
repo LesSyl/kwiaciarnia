@@ -83,7 +83,7 @@ a {
 	justify-content: center;
 	align-items: start;
 	padding: 2em;
-	height: 70%;
+	min-height: 80vh;
 	text-align: start;
 	@include heroImages('../img/heroImg.png');
 	background-attachment: scroll;

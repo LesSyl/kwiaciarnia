@@ -247,63 +247,6 @@
 	}
 }
 
-.weddings-faq {
-	&__accordion {
-		max-width: 80em;
-		margin: 0 auto;
-	}
-
-	&__item {
-		margin-bottom: 1em;
-		border: 1px solid rgba(0, 0, 0, 0.08);
-		border-radius: 1em;
-		background-color: #fff;
-		overflow: hidden;
-	}
-
-	&__question {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		width: 100%;
-		padding: 1.4em 1.8em;
-		border: none;
-		background: transparent;
-		cursor: pointer;
-		font-size: 1.5rem;
-		font-weight: 600;
-		text-align: left;
-		color: $color-text-main;
-
-		i {
-			font-size: 1.4rem;
-			transition: transform 0.3s;
-		}
-	}
-
-	&__answer {
-		max-height: 0;
-		overflow: hidden;
-		transition: max-height 0.3s ease;
-
-		p {
-			padding: 0 1.8em 1.8em;
-			font-size: 1.4rem;
-			line-height: 1.7;
-		}
-	}
-
-	&__item.active {
-		.weddings-faq__answer {
-			max-height: 20em;
-		}
-
-		.weddings-faq__question i {
-			transform: rotate(45deg);
-		}
-	}
-}
-
 .weddings-contact {
 	&__box {
 		padding: 3em 2em;
@@ -378,7 +321,6 @@
 	.weddings-process,
 	.weddings-packages,
 	.weddings-gallery,
-	.weddings-faq,
 	.weddings-contact {
 		padding-inline: 0;
 	}
