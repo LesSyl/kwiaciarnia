@@ -4,6 +4,19 @@
 .section-benefits {
 	background-color: #faf8f7;
 
+	.flowerbox-hero {
+		&__box {
+			background-image: linear-gradient(
+					to right,
+					rgba(248, 242, 240, 1) 0%,
+					rgba(248, 242, 240, 0.85) 40%,
+					rgba(248, 242, 240, 0.1) 75%
+				),
+				url('../img/bouquet/Flower\ Boxy.png');
+			background-position: right;
+		}
+	}
+
 	&__cards {
 		display: grid;
 		grid-template-columns: 1fr;
@@ -32,7 +45,6 @@
 	}
 }
 
-
 @media (min-width: 48em) {
 	.flowerbox-products__cards {
 		grid-template-columns: repeat(2, 1fr);
@@ -52,7 +64,7 @@
 					rgba(248, 242, 240, 0.85) 40%,
 					rgba(248, 242, 240, 0.1) 75%
 				),
-				url('./dist/img/bouquet/Flower Boxy.png');
+				url('../../dist/img/bouquet/Flower\ Boxy.png');
 
 			background-position: right;
 		}
