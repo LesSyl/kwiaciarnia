@@ -1,21 +1,13 @@
 @use './colors' as *;
 @use './mixin' as *;
 
+.page-flowerbox {
+	.hero {
+		@include pageHero('../img/bouquet/flower-boxy.png');
+	}
+}
 .section-benefits {
 	background-color: #faf8f7;
-
-	.flowerbox-hero {
-		&__box {
-			background-image: linear-gradient(
-					to right,
-					rgba(248, 242, 240, 1) 0%,
-					rgba(248, 242, 240, 0.85) 40%,
-					rgba(248, 242, 240, 0.1) 75%
-				),
-				url('../img/bouquet/Flower\ Boxy.png');
-			background-position: right;
-		}
-	}
 
 	&__cards {
 		display: grid;
@@ -64,7 +56,7 @@
 					rgba(248, 242, 240, 0.85) 40%,
 					rgba(248, 242, 240, 0.1) 75%
 				),
-				url('../../dist/img/bouquet/Flower\ Boxy.png');
+				url('../img/bouquet/flower-boxy.png');
 
 			background-position: right;
 		}

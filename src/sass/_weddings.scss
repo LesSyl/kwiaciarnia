@@ -1,62 +1,10 @@
 @use './colors' as *;
 @use './mixin' as *;
 
-.weddings-hero {
-	padding: 8em 1.5em 4em;
 
-	&__box {
-		display: flex;
-		align-items: center;
-		min-height: 34em;
-		padding: 3em 2em;
-		border-radius: 1em;
-		background-image: linear-gradient(
-				rgba(248, 242, 240, 0.92),
-				rgba(248, 242, 240, 0.92)
-			),
-			url('../dist/img/slubSection.png');
-		background-size: cover;
-		background-position: center;
-	}
-
-	&__subtitle {
-		margin-bottom: 0.8em;
-		font-size: 1.3rem;
-		font-weight: 700;
-		letter-spacing: 0.22em;
-		text-transform: uppercase;
-		color: $color-primary;
-	}
-
-	&__title {
-		max-width: 10em;
-		margin-bottom: 0.4em;
-		font-size: 4rem;
-		font-weight: 400;
-		line-height: 1.1;
-		color: $color-text-main;
-		@include fontPlayfairDisplay;
-	}
-
-	&__text {
-		max-width: 28em;
-		margin-bottom: 2em;
-		font-size: 1.5rem;
-		line-height: 1.7;
-		color: $color-text-main;
-	}
-
-	&__btn {
-		display: inline-flex;
-		padding: 0.9em 2em;
-		border: 1px solid $color-primary;
-		border-radius: 2em;
-		font-size: 1.2rem;
-		font-weight: 700;
-		text-transform: uppercase;
-		text-decoration: none;
-		color: $color-text-main;
-		background-color: rgba(255, 255, 255, 0.4);
+.page-weddings {
+	.hero {
+		@include pageHero('../img/slubSection.png');
 	}
 }
 
@@ -307,7 +255,7 @@
 					rgba(248, 242, 240, 0.88) 42%,
 					rgba(248, 242, 240, 0.08) 75%
 				),
-				url('./dist/img/slubSection.png');
+				url('/img/slubSection.png');
 			background-position: right center;
 		}
 
