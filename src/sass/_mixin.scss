@@ -45,10 +45,8 @@
 		border-radius: 1em;
 
 		background-image: linear-gradient(
-				to right,
-				rgba(248, 242, 240, 1) 0%,
-				rgba(248, 242, 240, 0.9) 35%,
-				rgba(248, 242, 240, 0.15) 70%
+				rgba(248, 242, 240, 0.7),
+				rgba(248, 242, 240, 0.7)
 			),
 			url(#{$image});
 
@@ -74,10 +72,11 @@
 
 	&__title {
 		margin-bottom: 0.3em;
-		font-size: 4rem;
+		font-size: 2.5rem;
 		font-weight: 400;
 		font-family: 'Playfair Display', serif;
 		font-optical-sizing: auto;
+		max-width: 100%;
 	}
 
 	&__text {
@@ -85,6 +84,7 @@
 		font-size: 1.6rem;
 		line-height: 1.6;
 		color: $color-text-main;
+		max-width: 100%;
 	}
 
 	&__btn {
@@ -95,60 +95,33 @@
 		color: #fff;
 		text-decoration: none;
 	}
+	@media (min-width: 48em) {
+		&__box {
+			background-image: linear-gradient(
+					to right,
+					rgba(248, 242, 240, 1) 0%,
+					rgba(248, 242, 240, 0.9) 35%,
+					rgba(248, 242, 240, 0.15) 70%
+				),
+				url(#{$image});
+
+			background-position: right center;
+		}
+		&__title {
+			max-width: 70%;
+			font-size: 4rem;
+		}
+		&__text {
+			max-width: 50%;
+		}
+		// @media (min-width: 62em) {
+		// 	&__title {
+		// 		max-width: 60%;
+		// 		font-size: 4.8rem;
+		// 	}
+		// }
+	}
 }
-
-// .hero {
-// 	padding: 8em 1.5em 4em;
-// 	background-color: #f8f2f0;
-
-// 	&__box {
-// 		position: relative;
-// 		display: flex;
-// 		align-items: center;
-// 		min-height: 32em;
-// 		overflow: hidden;
-// 		border-radius: 1em;
-// 		background-image: linear-gradient(
-// 				to right,
-// 				rgba(248, 242, 240, 0.7),
-// 				rgba(248, 242, 240, 0.7)
-// 			),
-// 			url('/dist/img/bouquet/flower-boxy.png');
-// 		background-size: cover;
-// 		background-position: center;
-
-// 	}
-
-// 	&__subtitle {
-// 		margin-bottom: 0.5em;
-// 		font-size: 6rem;
-// 		color: $color-primary-light;
-// 		font-family: 'Dancing Script', cursive;
-// 		font-weight: 400;
-// 	}
-
-// 	&__title {
-// 		margin-bottom: 0.4em;
-// 		font-size: 4rem;
-// 		@include fontPlayfairDisplay;
-// 	}
-
-// 	&__text {
-// 		max-width: 28em;
-// 		margin-bottom: 2em;
-// 		font-size: 1.5rem;
-// 		line-height: 1.7;
-// 	}
-
-// 	&__btn {
-// 		display: inline-flex;
-// 		padding: 1em 2em;
-// 		border-radius: 999px;
-// 		background: $color-primary;
-// 		color: #fff;
-// 		text-decoration: none;
-// 	}
-// }
 
 .products {
 	display: grid;
@@ -248,18 +221,6 @@
 }
 
 @media (min-width: 48em) {
-	// .hero {
-	// 	&__box {
-	// 		background-image: linear-gradient(
-	// 				to right,
-	// 				rgba(248, 242, 240, 1) 0%,
-	// 				rgba(248, 242, 240, 0.9) 35%,
-	// 				rgba(248, 242, 240, 0.15) 70%
-	// 			),
-	// 			url('/dist/img/bouquet/flower-boxy.png');
-	// 		// background-position: 50% right;
-	// 	}
-	// }
 	.products {
 		grid-template-columns: repeat(2, 1fr);
 	}
