@@ -49,21 +49,6 @@
 		strong {
 			font-size: 1.4rem;
 		}
-
-		a {
-			display: inline-flex;
-			justify-content: center;
-			align-items: center;
-			width: fit-content;
-			padding: 0.9em 2em;
-			border: 1px solid #b8918d;
-			border-radius: 2em;
-			font-size: 1.2rem;
-			font-weight: 700;
-			text-transform: uppercase;
-			text-decoration: none;
-			color: $color-text-main;
-		}
 	}
 }
 
@@ -113,32 +98,7 @@
 }
 
 @media (min-width: 48em) {
-	// .occasions-hero {
-	// 	// padding: 10em 0 4em;
-
-	// 	&__box {
-	// 		// min-height: 34em;
-	// 		background-image: linear-gradient(
-	// 				to right,
-	// 				rgba(248, 242, 240, 1) 0%,
-	// 				rgba(248, 242, 240, 0.9) 35%,
-	// 				rgba(248, 242, 240, 0.15) 70%
-	// 			),
-	// 			url('/dist/img/occasionsSection.png');
-	// 		// background-position: 50% right;
-	// 	}
-
-	// 	&__content {
-	// 		padding: 4em 5em;
-	// 	}
-
-	// 	&__title {
-	// 		font-size: 5.6rem;
-	// 	}
-	// }
-
 	.occasions-page {
-		// padding: 5em 0;
 
 		&__cards {
 			grid-template-columns: repeat(3, 1fr);
