@@ -2,7 +2,7 @@
 
 > Responsywna, wielostronicowa strona internetowa nowoczesnej kwiaciarni wykonana od podstaw jako projekt portfolio.
 
-![Podgląd projektu](./screenshot.png)
+![Podgląd projektu](./dist/img/readme/stronagłówna.png)
 
 
 Projekt został zaprojektowany i wykonany od podstaw z naciskiem na estetykę, przejrzystość oraz komfort użytkowania zarówno na urządzeniach mobilnych, jak i desktopowych. Strona prezentuje ofertę nowoczesnej kwiaciarni, obejmującą bukiety okolicznościowe, flower boxy, dekoracje ślubne oraz kompozycje kwiatowe na specjalne okazje.
@@ -27,31 +27,31 @@ Strona prezentuje ofertę kwiaciarni, umożliwia przeglądanie produktów oraz z
 
 ## Strona główna
 
-![Home](./screenshots/home.png)
+![Home](./dist/img/readme/stronagłówna.png)
 
 ---
 
 ## Okazje
 
-![Okazje](./screenshots/okazje.png)
+![Okazje](./dist/img/readme/okazje.png)
 
 ---
 
 ## Flower Boxy
 
-![Flower Boxy](./screenshots/flowerbox.png)
+![Flower Boxy](./dist/img/readme/flowerboxy.png)
 
 ---
 
 ## Śluby
 
-![Śluby](./screenshots/sluby.png)
+![Śluby](./dist/img/readme/sluby.png)
 
 ---
 
 ## Kontakt
 
-![Kontakt](./screenshots/kontakt.png)
+![Kontakt](./dist/img/readme/kontakt.png)
 
 ---
 
