@@ -1,3 +1,8 @@
 @use './colors' as *;
 @use './mixin' as *;
 
+.bouquet {
+	.hero {
+		@include pageHero('../img/bouquet/flower-boxy.png');
+	}
+}
