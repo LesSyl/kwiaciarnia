@@ -7,15 +7,6 @@
 	}
 }
 
-.section-subtitle {
-	margin-bottom: 0.8em;
-	font-size: 1.2rem;
-	font-weight: 700;
-	letter-spacing: 0.2em;
-	text-transform: uppercase;
-	color: $color-primary;
-}
-
 .weddings-intro {
 	padding-inline: 1.5em;
 
@@ -23,16 +14,16 @@
 		display: grid;
 		gap: 2em;
 
-		h2 {
-			font-size: 3rem;
+		&-title {
+			font-size: 2rem;
 			font-weight: 400;
 			line-height: 1.2;
 			color: $color-text-main;
 			@include fontPlayfairDisplay;
 		}
 
-		p {
-			font-size: 1.5rem;
+		&-text {
+			font-size: 1rem;
 			line-height: 1.8;
 			color: $color-text-main;
 		}
@@ -258,10 +249,13 @@
 		justify-content: center;
 		align-items: center;
 		margin: auto 1em;
-		p {
+		&-title{
+			font-size: 2.5rem;
+		}
+		&-text {
 			margin-top: 2em;
 			text-align: center;
-			font-size: 2rem;
+			font-size: 1.8rem;
 		}
 	}
 }
